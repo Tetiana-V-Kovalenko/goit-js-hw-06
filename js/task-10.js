@@ -34,6 +34,7 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes(event) {
-  console.log(boxes.childNodes);
-  [...boxes.childNodes].forEach((item) => item.remove());
+  boxes.innerHTML = ''; 
+//   console.log(boxes.childNodes);
+//   [...boxes.childNodes].forEach((item) => item.remove());
 }

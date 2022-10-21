@@ -20,8 +20,7 @@ galleryList.style.listStyleType = "none";
 console.log(galleryList);
 
 const imagesItemsString = images.map((image) => {
-  const imageItemHTML = `<li><img src=${image.url} alt=${image.alt} width='360' ></img></li>`;
- return imageItemHTML
+ return  `<li><img src=${image.url} alt=${image.alt} width='360' ></img></li>`;
 }).join('');
 
 galleryList.insertAdjacentHTML("afterBegin", imagesItemsString);

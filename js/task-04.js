@@ -1,5 +1,5 @@
-const Value = document.querySelector('#value');
-console.log(Value);
+const value = document.querySelector('#value');
+console.log(value);
 const btnDecrement = document.querySelector('button[data-action="decrement"]');
 console.log(btnDecrement);
 const btnIncrement = document.querySelector('button[data-action="increment"]');
@@ -11,11 +11,11 @@ btnDecrement.addEventListener('click', () => {
     
     counterValue--;
     console.log(counterValue);
-    Value.textContent = `${counterValue}`;
+    value.textContent = `${counterValue}`;
 })
 btnIncrement.addEventListener('click', () => {
     counterValue++;
     console.log(counterValue);
-    Value.textContent = `${counterValue}`;
+    value.textContent = `${counterValue}`;
 })
 

@@ -9,14 +9,15 @@ function onFormSubmit(event) {
 
   const mail = formElements.email.value;
   const password = formElements.password.value;
-  const formData ={
+  
+  if (mail ==='' || password === ''){
+    alert('У вас є незаповнене поле')
+    return
+  } else{
+    const formData ={
     mail, 
     password
   }
-  if (mail ==='' || password === ''){
-    alert('У вас є незаповнене поле')
-  } else{
-    
   console.log(formData);
   formEl.reset();
   }
